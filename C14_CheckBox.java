@@ -20,6 +20,7 @@ public class C01_CheckBox {
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
     }
 
     @Test
@@ -45,15 +46,10 @@ public class C01_CheckBox {
     }
 
 
-
-
     @After
     public void teardown(){
     driver.close();
     }
-
-
-
 
 }
 
