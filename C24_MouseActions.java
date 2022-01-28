@@ -3,6 +3,7 @@ package tests.day12;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
@@ -27,7 +28,9 @@ public class C02_MouseActions extends TestBase {
         Thread.sleep(5000);
 
     //new list sayfasını açıldıgını test edin
-
+        String actualTitle= driver.getTitle();
+        String arananMetin="Your List";
+        Assert.assertTrue(actualTitle.contains(arananMetin));
 
 }
 }
